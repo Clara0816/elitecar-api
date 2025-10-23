@@ -31,7 +31,6 @@ class ClienteController extends Cliente {
             // Envia uma mensagem informando que não foi possível acessar os dados
             return res.status(500).json({ mensagem: "Não foi possivel acessar a lista de clientes." });
         }
-
     }
 }
 

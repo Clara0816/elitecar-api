@@ -1,6 +1,7 @@
 import {Router} from "express";// Importa o módulo Router do express
 import type {Request, Response} from "express";// Importa os módulos de requição e
 import ClienteController from "./controller/ClienteController.js";
+import CarroController from "./controller/CarroController.js";
 
 const router = Router();
 
@@ -14,4 +15,9 @@ router.get("/api", (req: Request, res: Response) => {
  */
 // Retorna a lista com todos os clientes
 router.get("/api/clientes", ClienteController.todos);
+router.get("/api/carros", CarroController.todos);
+
 export {router};
+
+
+
